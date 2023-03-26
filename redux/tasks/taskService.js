@@ -1,6 +1,9 @@
 import axios from 'axios'
 
-const API_URL = 'http://localhost:5000/api/tasks/'
+const API_URL = process.env.NODE_ENV === 'production' 
+    ?   'https://ticker-server.onrender.com'
+    :  'http://localhost:5000/api/tasks/' 
+
 
 // Create a New Task
 const createTask = async (taskData, token) => {

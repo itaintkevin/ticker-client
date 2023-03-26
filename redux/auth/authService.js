@@ -1,8 +1,8 @@
 import axios from 'axios';
 
 const API_URL = process.env.NODE_ENV === 'production' 
-    ?   'https://ticker-server.onrender.com/api/tasks/'
-    :  'http://localhost:5000/api/tasks/' 
+    ?   'https://ticker-server.onrender.com/api/users/'
+    :  'http://localhost:5000/api/users/' 
 
 // Register User
 const register = async (userData) => {

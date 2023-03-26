@@ -47,7 +47,7 @@ export const authSlice = createSlice({
             state.isSuccess = false;
             state.message = "";
         },
-        toggleComponent: (state) => {
+        toggle: (state) => {
             state.toggleComponent = !state.toggleComponent;
         }
     },
@@ -87,5 +87,5 @@ export const authSlice = createSlice({
     }
 })
 
-export const { reset, toggleComponent } = authSlice.actions
+export const { reset, toggle } = authSlice.actions
 export default authSlice.reducer

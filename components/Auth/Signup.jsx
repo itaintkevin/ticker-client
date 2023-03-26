@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { useSelector, useDispatch } from "react-redux"
 import { toast } from 'react-toastify'
-import { register, reset } from '../../redux/auth/authSlice'
+import { register, reset, toggle } from '../../redux/auth/authSlice'
 import { useRouter } from 'next/router'
 import { setLogin } from '../../redux/auth/authSlice'
 
@@ -44,7 +44,7 @@ export default function Signup() {
     }
 
     const handleSignIn = () => {
-        dispatch(setLogin());
+        dispatch((toggle()));
     }
 
     const onSubmit = (e) => {

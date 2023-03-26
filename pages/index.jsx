@@ -7,7 +7,7 @@ import 'react-toastify/dist/ReactToastify.css'
 import { useSelector } from 'react-redux'
 
 export default function Home() {
-  const { login } = useSelector( (state) => state.auth);
+  const { toggleComponent } = useSelector((state) => state.auth);
 
   return (
     <>
@@ -23,7 +23,7 @@ export default function Home() {
           <Navbar />
           <div className="flex items-center justify-center h-full">
             {
-              login
+              toggleComponent
                 ? <Signup/>
                 : <Signin/>
             }

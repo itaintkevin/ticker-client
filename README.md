@@ -20,7 +20,7 @@
 - 💾 Backend: Powered by Node.js & Express.js Server
 - 🗄️ Database: MongoDB for Data Storage
 - 🚀 State Management: Utilizing Redux for state management
-- 💻 Language: Written in TypeScript
+- 💻 Language: Written in JavaScript
 - 🎨 Styling: Styled using Tailwind CSS
 
 ## Features

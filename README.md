@@ -1,38 +1,48 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Ticker
 
-## Getting Started
+**Ticker is a full-stack MERN (MongoDB, Express.js, React.js, Node.js) To-do List Web Application with User Authentication. It provides users with the ability to manage tasks, set their status, and assign priority levels. The project is built with Next.js, TypeScript, Tailwind CSS, and Redux, ensuring a seamless user experience.**
 
-First, run the development server:
+**With Ticker, users can create an account, log in securely, and start managing their tasks effectively. The application allows users to add new tasks, mark them as completed, update their status, and set their priority levels. The intuitive user interface makes it easy for users to organize and prioritize their tasks efficiently.**
+
+**The backend of Ticker is powered by Node.js and Express.js, which handle the API endpoints and authentication logic. MongoDB is used as the database to store user account information and task details. JWT (JSON Web Tokens) are utilized for secure user authentication and authorization.**
+
+| Authentication | Task Management |
+| --- | --- |
+| ![Authentication](https://cdn.discordapp.com/attachments/918024642860548126/1121337169756303550/mobile_2.png) | ![Task Management](https://cdn.discordapp.com/attachments/918024642860548126/1121337169500446750/mobile_3.png) | 
+
+## Deployment
+
+[View Live Project 🖥](https://ticker.kevinpaul.xyz/)
+
+## Technologies Used
+
+- 🖥️ Frontend: Built with Next.js
+- 💾 Backend: Powered by Node.js & Express.js Server
+- 🗄️ Database: MongoDB for Data Storage
+- 🚀 State Management: Utilizing Redux for state management
+- 💻 Language: Written in TypeScript
+- 🎨 Styling: Styled using Tailwind CSS
+
+## Features
+
+- 🔒 Secure User Authentication: JWT tokens for secure authentication and authorization.
+- ✅ Task Management: Create, update, and prioritize tasks with ease.
+- 🔄 Task Status: Set task status (completed, in progress, etc.) to track progress.
+- ⭐ Task Priority: Assign priority levels to tasks for better organization.
+- 📱 Responsive: Optimized for a seamless experience on desktop and mobile devices.
+- 🌐 RESTful API: Backend API endpoints for seamless communication between frontend and backend.
+
+## Run Locally
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+  // Clone the Repository
+  git clone https://github.com/kevinpauljacob/ticker-client
+  
+  // Go to the project directory
+  cd ticker-client
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+  // Install dependencies
+  pnpm install
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+  // Start the Server
+  pnpm run dev
